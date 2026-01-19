@@ -1,0 +1,102 @@
+/* ===== PAGE BACKGROUND ===== */
+.register-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== MAIN CARD ===== */
+.register-card {
+  width: 900px;
+  height: 520px;
+  background: white;
+  display: flex;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* ===== LEFT IMAGE ===== */
+.register-left {
+  width: 50%;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-left img {
+  width: 85%;
+  height: auto;
+}
+
+/* ===== RIGHT FORM ===== */
+.register-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-right h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #1e3a8a;
+}
+
+/* ===== FORM ===== */
+.register-right form input,
+.register-right form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+.register-right form input:focus,
+.register-right form select:focus {
+  border-color: #1e3a8a;
+}
+
+/* ===== BUTTON ===== */
+.register-right form button {
+  margin-top: 10px;
+  padding: 14px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.register-right form button:hover {
+  background: #163172;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .register-card {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+  }
+
+  .register-left,
+  .register-right {
+    width: 100%;
+  }
+
+  .register-left {
+    height: 220px;
+  }
+}

@@ -1,0 +1,100 @@
+/* ===== PAGE BACKGROUND ===== */
+.login-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== MAIN CARD ===== */
+.login-card {
+  width: 900px;
+  height: 480px;
+  background: white;
+  display: flex;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* ===== LEFT IMAGE ===== */
+.login-left {
+  width: 50%;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left img {
+  width: 85%;
+  height: auto;
+}
+
+/* ===== RIGHT FORM ===== */
+.login-right {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-right h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #1e3a8a;
+}
+
+/* ===== FORM ===== */
+.login-right form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+.login-right form input:focus {
+  border-color: #1e3a8a;
+}
+
+/* ===== BUTTON ===== */
+.login-right form button {
+  margin-top: 10px;
+  padding: 14px;
+  background: #1e3a8a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-right form button:hover {
+  background: #163172;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .login-card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+  }
+
+  .login-left {
+    height: 220px;
+  }
+}
